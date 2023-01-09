@@ -1,0 +1,18 @@
+.center {
+	text-align: center;
+	margin: 20px;
+}
+.hidden {
+	display: none;
+}
+#inputResults > div {
+	padding: 10px;
+	font-size: 18px;
+	border-bottom: 1px solid #d0bbbb;
+}
+#inputResults .error {
+	background-color: #fdacac;
+}
+#inputResults .succes {
+	background-color: #b3f7b3;
+}

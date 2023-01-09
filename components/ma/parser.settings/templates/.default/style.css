@@ -1,0 +1,19 @@
+.settings_block {
+	padding: 20px;
+    border: 1px solid #e4e4e4;
+	margin-left: 50px;
+	margin-top: 50px;
+	display: inline-block;
+}
+.search_words > textarea {
+	padding: 10px 20px;
+    margin-top: 10px;
+	width: 500px;
+	height: 250px;
+}
+.search_words > .ui-btn-main {
+	display: block;
+}
+.settings_title {
+	text-align: center;
+}

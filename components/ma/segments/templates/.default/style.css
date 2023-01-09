@@ -1,0 +1,127 @@
+.segment + .side-tabs__name {
+  margin-top: 32px; }
+
+.segment__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px; }
+  .segment__buttons:not(:last-child) {
+    margin-bottom: 32px; }
+
+.segment__area {
+  padding: 8px 16px;
+  margin: 32px 0;
+  height: 362px;
+  resize: none; }
+
+.segment__partners {
+  padding: 0;
+  margin: 32px 0;
+  color: #104379;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif; }
+
+.segment__partner {
+  display: flex;
+  justify-content: flex-start;
+  white-space: nowrap; }
+  .segment__partner.error {
+    white-space: normal; }
+
+.segment__partner-name {
+  white-space: normal;
+  color: #104379;
+  margin-left: 4px; }
+
+.segment__partner-remove {
+  color: inherit;
+  border-bottom: 1px dashed;
+  transition: .1s linear;
+  display: inline-block;
+  margin-left: 8px; }
+  .segment__partner-remove:hover {
+    border-color: transparent;
+    opacity: 0.7; }
+
+.segment__create {
+  display: flex;
+  gap: 16px;
+  align-items: center; }
+  .segment__create .label {
+    width: 100%; }
+  .segment__create .button, .segment__create .main-grid-settings-window .ui-btn.main-grid-settings-window-actions-item-button, .main-grid-settings-window .segment__create .ui-btn.main-grid-settings-window-actions-item-button, .segment__create .data-table input[type="submit"], .data-table .segment__create input[type="submit"], .segment__create .data-table input[type="button"], .data-table .segment__create input[type="button"] {
+    flex-shrink: 0; }
+
+.segment__status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #104379;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-top: 16px;
+  gap: 8px; }
+  .segment__status .link, .segment__status .knowledge-menu__link, .segment__status .knowledge-product__char-show, .segment__status .data-table a, .data-table .segment__status a {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border-bottom: 1px dashed;
+    transition: .1s linear; }
+    .segment__status .link:hover, .segment__status .knowledge-menu__link:hover, .segment__status .knowledge-product__char-show:hover, .segment__status .data-table a:hover, .data-table .segment__status a:hover {
+      border-color: transparent; }
+.side-tabs__wrapper {
+    box-shadow: 15px 0px 90px rgb(0 0 0 / 5%);
+    width: 100%;
+    padding: 25px 30px 39px;
+    max-width: calc(100% - 60px);
+    height: 100%;
+}
+.side-tabs__name {
+    border-bottom: 1px solid #EAF4FF;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+}
+.main-grid {
+    margin-right: -30px;
+    margin-left: -30px;
+    min-width: calc(100% + 60px);
+	position: relative;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-family: var(--ui-font-family-secondary,var(--ui-font-family-open-sans));
+    font-weight: var(--ui-font-weight-regular,400);
+}
+.input, .segment__area {
+	border-radius: 3px;
+    font-family: "Rubik", sans-serif;
+    color: #5F7C93;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border: 1px solid #CAD2DC;
+    height: 36px;
+	width: calc(100% - 30px);
+    padding: 0px 16px;
+}
+.segment__area {
+    padding: 8px 16px;
+    margin: 32px 0;
+    height: 362px;
+    resize: none;
+}
+.label__content {
+    display: block;
+    font-family: "Rubik", sans-serif;
+    color: #5F7C93;
+    font-size: 14px;
+    font-weight: 300;
+}
+.label:not(:last-child) {
+    margin-bottom: 16px;
+}
+.error {
+    color: #DB1719 !important;
+}

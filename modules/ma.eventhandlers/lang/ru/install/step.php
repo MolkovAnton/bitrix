@@ -1,0 +1,4 @@
+<?php
+$MESS["ITEES_DEVTOOLS_STEP_BEFORE"] = "Модуль";
+$MESS["ITEES_DEVTOOLS_STEP_AFTER"] = "установлен";
+$MESS["ITEES_DEVTOOLS_STEP_SUBMIT_BACK"] = "Назад";

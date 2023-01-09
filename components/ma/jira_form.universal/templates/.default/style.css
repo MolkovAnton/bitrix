@@ -1,0 +1,23 @@
+.ui-entity-control {
+	text-align: center;
+}
+.jira-form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.error {
+	border-color: red!important;
+}
+.jira-response {
+	font-size: 20px;
+    color: #08b108;
+    text-align: center;
+}
+.jira-errors-container {
+	margin: 15px 0;
+    color: red;
+}
+.field-item > .ui-ctl-element {
+	display: flex;
+    align-items: center;
+}

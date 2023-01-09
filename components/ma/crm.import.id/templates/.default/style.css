@@ -1,0 +1,26 @@
+.entity_selector {
+	margin: 20px 0;
+}
+.hidden {
+	display: none;
+}
+.previewTable {
+	border-collapse: collapse;
+}
+.previewTable td, .previewTable th {
+	border: 1px solid gray;
+	padding: 10px;
+}
+#preload {
+	margin-top: 25px;
+}
+.total_count {
+	margin: 20px 0;
+    font-size: 18px;
+}
+.good_item {
+	color: #10c510;
+}
+.bad_item {
+	color: red;
+}

@@ -1,0 +1,52 @@
+.inn_checker_type_chooser, .inn_checker_form_title {
+	/*display: none;*/
+	text-align: center;
+}
+.inn_checker_info, .inn_checker_file_block, .bottom-info {
+	font: 600 var(--ui-btn-size-font-size)/calc(var(--ui-btn-size-height) - 2px) "OpenSans-SemiBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.inn_checker_file_block {
+	margin-top: 20px;
+}
+.inn_checker_info {
+	margin-bottom: 30px;
+	padding: 15px 0;
+	background-color: aliceblue;
+}
+.bottom_buttons {
+	text-align: center;
+    margin-top: 20px;
+}
+.inn_checker_title {
+	font-weight: 600;
+    margin-bottom: 15px;
+}
+.inn_checker_file_block input {
+	margin-left: 30px;
+}
+#dowload-link{
+	margin-top: 20px;
+	text-align: center;
+}
+#result-container{
+	margin-top: 10px;
+}
+#result-container table td, #result-container table th {
+	border: 1px solid #bdbcbc;
+	padding: 5px 10px;
+}
+#result-container table {
+	border-collapse: collapse;
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+.notFind {
+	margin-left: 10px;
+}
+.bottom-info {
+	margin-top: 20px;
+    font-weight: 600;
+}

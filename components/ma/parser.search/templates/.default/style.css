@@ -1,0 +1,97 @@
+.hidden {
+	display: none!important;
+}
+.parser_body, #field_chooser select, .parser_search_words, .search_words > textarea, .error {
+	font-size: 15px;
+}
+.parser_body {
+	position: relative;
+}
+#field_chooser {
+	margin-top: 10px;
+}
+#field_chooser > div {
+	margin-bottom: 10px;
+}
+#field_chooser .ui-btn-primary.ui-btn-main {
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+#field_chooser span {
+	margin-left: 15px;
+}
+#field_chooser select {
+	padding: 5px 10px;
+}
+#field_chooser select option {
+	padding: 5px;
+}
+.parser_buttons {
+	margin-top: 20px;
+}
+.search_words {
+	width: 460px;
+	margin: 0 auto;
+}
+.search_words > textarea {
+    height: 180px;
+    padding: 10px 20px;
+	margin-top: 10px;
+}
+#set_search_words_button {
+	width: 100%;
+}
+.search_words > textarea {
+	width: calc(100% - 42px);
+}
+#parser_info {
+	background-color: #ebf6ff;
+}
+#parser_info div[data-role="button"] {
+	margin-top: 20px;
+}
+.parser_head_info, #field_chooser, #parser_info, .parser_search_words > div, .user_selector{
+	display: inline-block;
+}
+.parser_head_info, #field_chooser, #parser_info, .parser_search_words > div, .user_selector {
+	padding: 20px 80px;
+    border: 1px solid #e4e4e4;
+}
+.parser_body > div, .parser_search_words, .user_selector_container {
+	text-align: center;
+	margin-top: 20px;
+}
+.parser_body .delimiter {
+	margin: 10px 0;
+}
+.error {
+	color: red;
+	font-weight: 600;
+}
+.info_small {
+	font-size: 12px;
+    color: gray;
+    margin-bottom: 5px;
+}
+#set_responsibles_button {
+	margin-top: 20px;
+}
+.user_selector_item {
+	margin-top: 20px;
+}
+.user_selector_title {
+	font-weight: 600;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.text_left {
+	text-align: left;
+}
+span.desc {
+	position: absolute;
+	right: 0;
+}
+.file_name {
+	color: #7d7d7d;
+    margin-top: 5px;
+}
