@@ -2,6 +2,7 @@
 namespace CustomComponent;
 
 use \Bitrix\Main\Application,
+    \Bitrix\Main\Page\Asset,
     \Bitrix\Main\Loader;
 
 class Component extends \CBitrixComponent
@@ -14,6 +15,8 @@ class Component extends \CBitrixComponent
         $this->request = Application::getInstance()->getContext()->getRequest();
         $this->registerModules();
         $this->id = $this->GetName().'_'.substr(md5(rand()), 0, 4);
+        
+        $this->initJs();
         
         if (!empty($this->errors)) {
             throw new \Exception(implode('<br>', $this->errors));
@@ -34,6 +37,23 @@ class Component extends \CBitrixComponent
         }
     }
     
+    protected function initJs() {
+        Asset::getInstance()->addJs('/local/js/CustomComponent.js');
+        $script = "<script>
+            BX.ready(() => {
+                new ".get_class($this)."({
+                    componentName: '".$this->GetName()."',
+                    container: '$this->id',
+                    arParams: ".\CUtil::PhpToJSObject($this->arParams).",
+                    arResult: ".\CUtil::PhpToJSObject($this->arResult).",
+                    tempalte: '".$this->GetTemplateName()."'
+                });
+            });
+        </script>";
+        Asset::getInstance()->addString($script);
+    }
+
+
     protected function customIncludeTemplate() {
         echo '<div id="'.$this->id.'">';
         $this->IncludeComponentTemplate();
@@ -62,7 +82,7 @@ class Component extends \CBitrixComponent
         }
     }
     
-    protected function getView(string $view, array $arResult = []) {
-        return $this->getViewContent($_SERVER['DOCUMENT_ROOT'].$this->GetPath().'/templates/'.$this->getTemplateName()."/view/$view.php", $arResult);
+    protected function getView(string $template = '.default', string $view, array $arResult = []) {
+        return $this->getViewContent($_SERVER['DOCUMENT_ROOT'].$this->GetPath()."/templates/$template/view/$view.php", $arResult);
     }
 }
