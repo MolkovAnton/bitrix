@@ -41,9 +41,18 @@ class CustomComponent {
             }
         })
         .then(response => {
-            this.unregisterListeners();
+            this.unregisterListeners(container);
             container.innerHTML = response.data.html;
-            this.registerListeners(this.$container);
+            this.registerListeners(container);
         });
+    }
+    static initClass(className, params) {
+        try {
+            const name = eval(className);
+            const object = new name(params);
+            return object;
+        } catch(e) {
+            
+        }
     }
 }

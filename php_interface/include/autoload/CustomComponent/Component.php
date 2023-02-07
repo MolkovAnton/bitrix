@@ -41,7 +41,7 @@ class Component extends \CBitrixComponent
         Asset::getInstance()->addJs('/local/js/CustomComponent.js');
         $script = "<script>
             BX.ready(() => {
-                new ".get_class($this)."({
+                CustomComponent.initClass('".get_class($this)."', {
                     componentName: '".$this->GetName()."',
                     container: '$this->id',
                     arParams: ".\CUtil::PhpToJSObject($this->arParams).",
